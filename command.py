@@ -39,7 +39,7 @@ def myCommandCallback(cmd): # function for Callback
 try:
 	deviceOptions = {"org": organization, "type": deviceType, "id": deviceId, "auth-method": authMethod, "auth-token": authToken}
 	deviceCli = ibmiotf.device.Client(deviceOptions)
-	#..............................................
+	#...............................................
 	
 except Exception as e:
 	print("Caught exception connecting device: %s" % str(e))
